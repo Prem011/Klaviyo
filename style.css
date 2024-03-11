@@ -1,0 +1,1122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%
+}
+
+@font-face {
+    font-family: klaviyo-font;
+    src: url(./Sohne-Buch.woff2);
+}
+
+@font-face {
+    font-family: roboto-thin;
+    src: url(./Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url(./Roboto/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(./Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #242426;
+    overflow-x: hidden;
+
+}
+
+#fixed-nav{
+    width: 100%;
+    height: 5vw;
+    /* background: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    /* color: #000; */
+    /* display: none; */
+    position: fixed;
+    z-index: 99999;
+    opacity: 0;
+  
+}
+
+#fixed-nav #nav-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:  0 0 0 5vw;
+}
+
+#fixed-nav #nav-right{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(128, 91, 91); */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#fixed-nav #p1navp1{
+    /* font-family: ; */
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #000;
+}
+
+#fixed-nav #p1navp1 img{
+    width: 3.5%;
+    height: 3.5%;
+}
+
+#fixed-nav #p1navp2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+    color: #000;
+    font-size: 1.01vw;
+    gap: 2.35vw;
+}
+
+#fixed-nav .select{
+    text-decoration: none;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 1vw;
+
+}
+
+#fixed-nav #p1navp3{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2vw;
+    margin-left: 5vw;
+    color: #000;
+
+    /* background: red; */
+}
+
+#fixed-nav #wbg{
+    padding: .8vw 1.2vw;
+    border-radius: 20pc;
+    font-size: 1.3vw;
+    border: none;
+    color: #fff;
+    background: #000;
+    
+}
+
+#fixed-nav #wbg:hover{
+  background: #fff;
+  border: 0.15vw solid #fff;
+  color: #000;
+}
+
+#fixed-nav #bbg{
+    padding: .6vw 1.2vw;
+    border-radius: 20pc;
+    color: #000;
+    font-size: 1.3vw;
+    border: 0.15vw solid #000;
+    background: #fff;
+    
+}
+
+#fixed-nav #bbg:active {
+    background: #fff;
+    color: #000;
+
+}
+#fixed-nav #bbg:hover {
+    background: #fff;
+    color: #000;
+
+}
+#fixed-nav #underline{
+    text-decoration: underline;
+    line-height: 1vw;
+
+}
+
+    /* ---------------------------------------page1---------------------------------------------- */
+
+
+#page1{
+    width: 100vw;
+    height: 150vh;
+    /* background-color: red; */
+    z-index: 1;
+}
+
+#p1discount{
+    width: 100%;
+    height: 3%;
+    background: #f9fc99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1discount p{
+    font-size: 1vw;
+    /* text-align: center; */
+  
+
+}
+
+#p1discount img{
+    width: 15px;
+    height: 15px;
+}
+
+#p1nav{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    color: #fff
+}
+
+#nav-left{
+    width: 56%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 2vw;
+}
+
+#nav-right{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(128, 91, 91); */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#p1navp1{
+    /* font-family: ; */
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #fff;
+}
+
+#p1navp1 img{
+    width: 5%;
+    height: 5%;
+}
+
+#p1navp2{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+    font-size: 1.01vw;
+}
+
+.select{
+    text-decoration: none;
+    border: none;
+    background: #242426;
+    color: #fff;
+    font-size: 1vw;
+
+}
+
+#p1navp3{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2vw;
+    margin-left: 5vw;
+    /* background: red; */
+}
+
+#wbg{
+    padding: .8vw 1.2vw;
+    border-radius: 20pc;
+    font-size: 1.3vw;
+    border: none;
+    
+}
+
+#wbg:hover{
+  background: #242426;
+  border: 0.15vw solid #fff;
+  color: #fff;
+}
+
+#bbg{
+    padding: .6vw 1.2vw;
+    border-radius: 20pc;
+    color: #fff;
+    font-size: 1.3vw;
+    border: 0.15vw solid #fff;
+    background: #242426;
+    
+}
+
+#bbg:active {
+    background: #fff;
+    color: #000;
+
+}
+#bbg:hover {
+    background: #fff;
+    color: #000;
+
+}
+#underline{
+    text-decoration: underline;
+    line-height: 1vw;
+
+}
+
+#p1headlogo{
+    width: 100%;
+    height: 4%;
+    /* background-color: rgb(43, 8, 8); */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#p1headlogo img{
+    width: 3%;
+    height: 55.5%;
+    text-align: center;
+}
+
+#p1heading{
+    /* margin-top: 2.8vw; */
+    width: 100%;
+    height: 14%;
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+    font-family: roboto-thin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1heading h2{  
+    width: 60%;
+    color: white;
+    font-size: 3.4vw;
+    font-weight: 580;
+    font-family: roboto-thin;
+    /* background-color: aqua; */
+    padding: 0 5.57%;
+}
+
+#p1heading h2 span{
+    font-weight: 600;
+    background-image: linear-gradient(to right bottom, #a60d63, #b92462, #cb3760, #da4b5f, #e85e5e, #ee6c5b, #f27959, #f68758, #f49256, #f19d56, #eda757, #e9b15b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#p1-head-below-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: #da4b5f; */
+    height: 6%;
+    gap: 2.5vw;
+    text-align: center;
+}
+
+#p1img{
+    width: 100%;
+    height: 45%;
+    background-color: #fff;
+    z-index: 10;
+    background-image: url(https://klaviyo-marketing-site-us.netlify.app/static/custom-c6910f9b5cbfdaa41fa4d2cace6d5b0b.webp);
+    background-position: center;
+    background-size: cover;
+    background-color: red;
+    object-fit: cover;
+    object-position: center;
+}
+
+#p1heading2{
+    background: #242426;
+    width: 70%;
+    height: 12%;
+    color: white;
+    font-family: roboto-thin;
+    font-size: 1.5vw;
+    font-weight: thin;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;  
+    margin: 0 15%;
+}
+
+#p1-btm-btn{
+    width: 100%;
+    height: 20;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3vw;
+}
+#p1-btm-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    border: 0.15vw solid white;
+    border-radius: 20pc;
+    padding: 0.8vw 1.5vw;
+    
+}
+/* --------------------------------PAGE2-------------------------------- */
+
+#page2{
+    width: 100vw;
+    height: 250vh;
+    position: relative;
+    background-color: #fffaf3;
+    
+}
+
+#p2-heading{
+    width: 70%;
+    height: 12%;
+    color: #000;
+    font-family: roboto-thin;
+    font-size: 1.5vw;
+    font-weight: thin;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;  
+    margin: 0 15%;
+}
+
+#p2-heading span{
+    font-weight: 600;
+    background-image: linear-gradient(to right bottom, #a60d63, #b92462, #cb3760, #da4b5f, #e85e5e, #ee6c5b, #f27959, #f68758, #f49256, #f19d56, #eda757, #e9b15b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#p2-c{
+    width: 100%;
+    height: 190vh;
+    /* background-color: #c68121; */
+}
+
+#p2-c1{
+    width: 70%;
+    height: 30%;
+    margin: 0 15%;
+    /* background-color: #b92462; */
+    display: flex;
+    justify-content: space-between;
+}
+.p2-c1-box{
+    width: 23%;
+    height: 100%;
+    background-color: #76757532;
+    border: 0.01vw solid #dadada5f;
+    box-shadow: #242426;
+    border-radius: 1pc;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.8vw;
+    padding-left: 0.1vw;
+    padding-right:0.1vw;
+    position: relative;
+    background-color: #fef9f1;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+
+}
+
+.p2-box-c{
+    width: 100%;
+    height: 100%;
+    /* background: #000; */
+    padding-top: 0.6vw ;
+    padding-left: 0.4vw ;
+    padding-right: 0.4vw ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.p2-c1-box a{
+    width: 60%;
+    height: 9%;
+    padding: 0.5vw 1.5vw;
+    text-decoration: none;
+    color:#fff ;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20pc;
+    font-size: 0.82vw;
+    font-family: roboto-light;
+}
+
+
+.p2-c1-box img{
+    width: 90%;
+    height: 85%;
+}
+.p2-hover{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    left: -50%;
+    /* display: none; */
+    opacity: 0;
+    padding: 0 1.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+
+.p2-hover-img{
+    width: 100%;
+    height: 100%;
+}
+
+.p2-hover-p4{
+    width: 90%;
+    /* height: 80%; */
+}
+
+.p2-hover p{
+    font-family: roboto-light;
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+.p2-hover-p4{
+    top: 17%;
+}
+
+.p2-img1{
+    width: 100%;
+    height: 50%;
+}
+
+.p2-img2{
+    width: 100%;
+    height: 70%;
+}
+
+/* ------------------------------------------P2-C2------------------------------------------- */
+
+
+#p2-c2{
+    width: 70%;
+    height: 24%;
+    margin: 4% 15%;
+    /* background-color: #b92462; */
+    display: flex;
+    justify-content: space-between;
+    border: 0.1vw solid #dadada;
+    border-radius: 1pc;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+
+#p2-c2:hover{
+    background: rgb(227,217,199);
+background: linear-gradient(135deg, rgba(227,217,199,1) 3%, rgba(249,246,238,1) 42%);
+}
+
+#p2-c2-p1{
+    width: 35%;
+    height: 50%;
+    /* background: #e9b15b; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+#p2-c2-p1 a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.6vw 0.8vw;
+    border-radius: 2pc;
+    color: #fff;
+    background: #000;
+    font-family: klaviyo-font;
+    font-weight: 500;
+    font-size: 0.89vw;
+    text-align: center;
+}
+
+#p2-c2-p1 p{
+    width: 80%;
+    font-family: klaviyo-font;
+    font-weight: 400;
+    font-size: 0.97vw;
+    text-align: center;
+}
+
+#p2-c2-p2{
+    width: 65%;
+    height: 100%;
+    /* background: #584324; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+
+#img-section{
+    width: 96%;
+    height: 90%;
+   
+    background-image: url(https://klaviyo-marketing-site-us.netlify.app/static/cdp-desktop-9435dbb92455c4c3323b495957479354.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: #da4b5f; */
+}
+
+
+/* --------------------------------------------p2-c3--------------------------------------------
+ */
+
+ #p2-c3{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffaf3;
+}
+
+#p2-c3-flex{
+     padding-left: 4vw;
+    width: 70%;
+    height: 70%;
+    /* background: #c40707; */
+    margin: 2% 15%;
+    /* text-align: center; */
+
+ }
+
+ .p2-c3-f1{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0.5vw;
+    
+ }
+
+
+
+ .p2-c3-f2{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5vw;
+
+
+ }
+
+ .b1 img, .b2 img, .b3 img, .b4 img, .b5 img, .b6 img{
+    width: 70%;
+    /* height: 80%; */
+ }
+
+ .b1 h4, .b2 h4, .b3 h4, .b4 h4, .b5 h4, .b6 h4{
+    font-family: klaviyo-font;
+    font-weight: 500;
+    font-size: 20px;
+ }
+
+ .b1 p, .b2 p, .b3 p, .b4 p, .b5 p, .b6 p{
+    width: 80%;
+    /* background: #000; */
+    font-family: klaviyo-font;
+    font-weight: 400;
+    font-size: 16;
+ }
+
+ #p2-c3-btm-btn{ 
+    text-align:  center;
+ }
+
+ #p2-c3-btm-btn button{ 
+      border: 0.15vw solid #000;
+      background: transparent;
+
+ }
+
+ /* -------------------------------------page3------------------------------------------------ */
+
+ #page3{
+    width: 100vw;
+    height: 380vh;
+    background: #232426;
+    position: relative;
+
+ }
+
+ #radial-bg{
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    background-image: url(https://klaviyo-marketing-site-us.netlify.app/static/integration-glow-cropped-6548b4cf6bd074a0cb6cd6566739838b.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -20%;
+    top: -1%;
+ }
+
+ #splash{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-image: url(https://klaviyo-marketing-site-us.netlify.app/static/social-glow-298a7b7a7b69dbf5fdcd6f90bbf27722.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0%;
+    top: 23%;
+    opacity: 0.3;
+ }
+
+ #p3-heading{
+    padding-top: 3vw;
+    width: 42%;
+    height: 1.7%;
+    color: #fff;
+    font-family: roboto-thin;
+    font-size: 1.5vw;
+    font-weight: thin;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;  
+    margin: 0 15%;
+    /* background-color: #b92462; */
+    margin: 2% 27.5%;
+
+ }
+
+ #p3-heading span{
+    font-weight: 400;
+    background-image: linear-gradient(to right bottom, #a60d63, #b92462, #cb3760, #da4b5f, #e85e5e, #ee6c5b, #f27959, #f68758, #f49256, #f19d56, #eda757, #e9b15b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ #p3-img{
+    width: 50%;
+    height: 18%;
+    /* background: #da4b5f; */
+    margin: 4% 25%;
+    background-image: url(https://www.klaviyo.com/wp-content/uploads/2022/07/integration-img.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ #p3-btm-btn{
+    width: 100%;
+    height: 2%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3vw;
+    /* background: red; */
+    position: relative;
+    margin-bottom: 6vw;    
+}
+
+#p3-btm-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    border: 0.15vw solid white;
+    border-radius: 20pc;
+    padding: 0.8vw 1.5vw;
+}
+
+#p3-btm-btn a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#vds-f{
+    width: 70%;
+    height: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 15%;
+    /* border-radius: 2pc; */
+}
+
+.v-f1, .v-f2 , .v-f3{
+    width: 32%;
+    height: 100%;
+
+    background: #00000031;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+
+    border-radius: 1pc;
+}
+.v-f1 h3, .v-f2 h3 , .v-f3 h3{
+   font-family: klaviyo-font;
+   font-weight: 400;
+   font-size: 18px;
+   color: #fff;
+}
+.v-f1 .p, .v-f2 .p , .v-f3 .p{
+   font-family: klaviyo-font;
+   font-weight: 300;
+   font-size: 14px;
+   color: #ffffff52;
+}
+
+.v-f1 a, .v-f2 a , .v-f3 a{
+    width: 22%;
+    text-decoration: none;
+    color: #fff;
+    font-family: klaviyo-font;
+   font-weight: 500;
+   font-size: 13px;
+   /* border: 0.1vw solid #dadada; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* text-align: center; */
+   padding: 0.3vw 0.3vw;
+   border-radius: 2pc;
+   background-color: #dadada1f;
+
+}
+
+.v-f3 a{
+    width: 35%;
+    text-decoration: none;
+    color: #fff;
+    font-family: klaviyo-font;
+   font-weight: 500;
+   font-size: 13px;
+   /* border: 0.1vw solid #dadada; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* text-align: center; */
+   padding: 0.3vw 0.3vw;
+   border-radius: 2pc;
+   background-color: #dadada1f;
+}
+
+.flex-item{
+    width: 100%;
+    height:50%;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.v-f1 #img{
+    width: 100%;
+    height: 44%;
+    background-image: url(https://www.klaviyo.com/wp-content/uploads/2022/07/ML_profile-1120x630.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    position: relative;
+}
+
+
+ .v-f2 #img{
+    width: 100%;
+    height: 44%;
+    background-image: url(https://www.klaviyo.com/wp-content/uploads/2022/07/MI_profile-1120x630.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    position: relative;
+}
+
+.v-f3 #img{
+    width: 100%;
+    height: 44%;
+    background-image: url(https://www.klaviyo.com/wp-content/uploads/2022/07/colourpop-1120x630.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    position: relative;
+    backdrop-filter: blur(10px);
+
+}
+
+.v-f1 #img .play{
+    width: 10%;     
+    position: absolute;
+    top: 78%;
+    left: 2%;
+    filter: blur(0px);
+
+    /* background: #000; */
+    
+} 
+
+.v-f2 #img .play{
+    width: 10%;     
+    position: absolute;
+    top: 78%;
+    left: 2%;
+    filter: blur(0px);
+
+
+}
+
+.v-f3 #img .play{
+    width: 10%;     
+    position: absolute;
+    top: 78%;
+    left: 2%;
+    backdrop-filter: blur(10px);
+    filter: blur(0px);
+}
+
+#h-flex{
+    width: 60%;
+    height: 3%;
+    margin: 0 20%;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.im1 img{
+    width: 70%;
+}
+
+#btm-4{
+    width: 60%;
+    height: 90vh;
+    /* background: red; */
+    margin: 3% 20%;
+}
+
+.btm-4-1, .btm-4-2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btm-4-1-1, .btm-4-1-2 , .btm-4-2-1, .btm-4-2-2{
+    width: 48%;
+    height: 90%;
+    background: #0c0c0c41;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    position: relative;
+    border-radius: 2pc;
+}
+
+.btm-4-1-1 img, .btm-4-1-2 img, .btm-4-2-1 img, .btm-4-2-2 img{
+    width:100%;
+    height: 85%;
+    border-top-right-radius:2pc;
+    border-top-left-radius:2pc;    
+}
+
+.btm-4-1-1 h3, .btm-4-1-2 h3, .btm-4-2-1 h3, .btm-4-2-2 h3{
+    font-family: klaviyo-font;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 2% 0 5% 4%;
+    color: #fff;
+}
+
+
+#p3-btm{
+    padding-top: 3vw;
+    width: 42%;
+    height: 20%;
+    color: #fff;
+    font-family: roboto-thin;
+    font-size: 1.5vw;
+    font-weight: thin;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;  
+    /* background-color: #b92462; */
+    margin: 7% 27.5%;
+}
+    
+
+#btm-bg{
+    width: 100%;
+    height: 16%;
+    background-image: url(./final-cta-background-0f38e0b44d882121c5135664db5388b9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#btm-bg img{
+   
+    /* position: absolute; */
+}
+
+/* ----------------------Footer----------------- */
+
+#footer{
+    width: 100vw;
+    height: 110vh;
+    background: #242426;
+    position: relative;
+}
+
+#foot-c{
+    width: 60%;
+    height: 100%;
+    /* background: #9c1414; */
+    margin: 5% 20% 3% 20% ; 
+    display: flex;
+}
+
+#foot-left{
+    width: 50%;
+    height: 100%;
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#foot-left #foot-logo{
+    width:15%;
+    height:20%;
+    margin-top: 10%;
+}
+#foot-left p{
+    margin-top: 5%;
+    width: 58%;
+   font-family: klaviyo-font;
+   font-size: 1.9vw;
+   font-weight: 300;
+   color: #fff;
+
+}
+
+
+#foot-right{
+    width: 50%;
+    height: 100%;
+    /* background: #a32929; */
+}
+
+
+#foot-left-down{ 
+    width: 90%;
+    height: 20%;
+}
+
+#icons{
+    width: 15%;
+    height: 15%;
+    display: flex;
+    gap: 1vw;
+}
+
+#foot-left-down p img{
+    width: 6%;
+    height: 6%;
+
+}
+
+#foot-left-down p {
+    font-family: klaviyo-font;
+    font-size: 0.8vw;
+    font-weight: 300;
+
+}
+
+.alink a{
+    color: #fff;
+    font-family: klaviyo-font;
+    font-size: 0.6vw;
+    font-weight: 300;
+}
+
+#right-top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top1{
+    width: 33%;
+    height: 100%;
+}
+.top1 a{
+    display: block;
+    width: 33%;
+    height: 100%;
+}

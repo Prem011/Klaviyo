@@ -5,7 +5,7 @@ function navAnimation(){
 
 
   gsap.to(nav,{
-    display:"inline",
+    display:"flex",
     opacity:1,
     duration:0.5,
     opacity:1,
